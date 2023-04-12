@@ -1,0 +1,54 @@
+[33mcommit 317d19cef2286f996a7a9027387c06a55b2a08a4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Wed Apr 12 00:39:58 2023 +0200
+
+    ajout les pages html de chaque restaurants
+
+[33mcommit aa0324d3d5723eb0d981a9572af21ca6f42e7881[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Wed Apr 12 00:35:57 2023 +0200
+
+    Ajout dossier css et restaurants
+
+[33mcommit ccb8079731bdd71af3010ea597b0af7a2def6bfe[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Tue Apr 11 20:36:40 2023 +0200
+
+    Mise en place préprocesseur sass via dossier dart sass / Ajout dossier sass, fichier css et css map
+
+[33mcommit 5be7d0e245b4862ac919b95781d67b66c81ab3f0[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Mon Apr 10 18:28:58 2023 +0200
+
+    lorem
+
+[33mcommit 186565f92841aa4201143dc4749761533dcee848[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Mon Apr 10 18:18:04 2023 +0200
+
+    ajout dossier images
+
+[33mcommit 2542a740ba4a4042487d70f2e7656284d4be03be[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Mon Apr 10 18:14:44 2023 +0200
+
+    doctype
+
+[33mcommit e9bd9a610656f72844f4905a3c47e0e1073bfd0b[m
+Merge: 15ea764 0d174ca
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Mon Apr 10 18:08:18 2023 +0200
+
+    Merge branch 'main' of https://github.com/Redouane-BCAA/Projet-4-
+
+[33mcommit 15ea764043bcafc0f42a3c96b9e83a2901609168[m
+Author: Redouane Bouchmaa <red.bouchmaa.dev@gmail.com>
+Date:   Mon Apr 10 16:06:27 2023 +0200
+
+    Ajout fichier html et css
+
+[33mcommit 0d174ca517a9b515ad0a94d0f20578d908b3e329[m
+Author: Redouane-BCAA <130309538+Redouane-BCAA@users.noreply.github.com>
+Date:   Mon Apr 10 15:41:33 2023 +0200
+
+    Initial commit
