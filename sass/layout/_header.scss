@@ -1,0 +1,15 @@
+header{
+    background-color: $white-bc;
+    height: 63px;
+    @include flexbase;
+    nav{
+        @include flexbase;
+        
+        .nav__arrow-left{
+            display: none;
+        }
+        img{
+            width: 200px;
+        }
+    }
+}

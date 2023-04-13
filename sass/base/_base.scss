@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: $lightgrey-bc;
+}
+
+h1,h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.bc-lightgrey{background-color: $lightgrey-bc;}
+.bc-middlegrey{background-color: $middlegrey-bc;}
+.bc-darkgrey{background-color: $darkgrey-bc;}

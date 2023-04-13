@@ -1,0 +1,28 @@
+// RESTAURANTS CARD
+.restaurants__card{
+    padding: 15px;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+        a{
+            text-decoration: none;
+            color: black;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            img{
+                object-fit: cover;
+                height: 60%;
+                width: 100%;
+            }
+            .card-content{
+                display: flex;
+                flex-direction: row ;
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+        }
+    }

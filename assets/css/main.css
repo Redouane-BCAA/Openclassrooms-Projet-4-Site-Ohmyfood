@@ -1,5 +1,7 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe,
+hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -43,16 +45,91 @@ td, th {
   padding: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 body {
-  background-color: grey;
+  font-family: "roboto", sans-serif;
+  background-color: #F6F6F6;
+}
+
+h1, h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.bc-lightgrey {
+  background-color: #F6F6F6;
+}
+
+.bc-middlegrey {
+  background-color: #EAEAEA;
+}
+
+.bc-darkgrey {
+  background-color: #353535;
+}
+
+.restaurants__card {
+  padding: 15px;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+}
+.restaurants__card a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__card a h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.restaurants__card a img {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+}
+.restaurants__card a .card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #FFFFFF;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav__arrow-left {
+  display: none;
+}
+header nav img {
+  width: 200px;
 }
 
 main {
-  background-color: white;
-}
-
-h2 {
-  color: blue;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
