@@ -1,0 +1,179 @@
+main{
+    display: flex;
+    flex-direction: column;
+
+    // LOCALISATION BAR
+    .localisation{
+        @include flexmid;
+        
+        .localisation__form{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+            input{
+                border: none;
+                background-color: $middlegrey-bc;
+                padding-left: 10px;
+                font-size: 16px;
+                font-weight: bold;
+
+            }
+            input:focus{
+                outline: none;
+            }
+        }
+
+        ::placeholder{
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    // SECTION RESERVATION
+    .reservation{
+        @include flexmid;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 57px;
+        padding: 15px;
+
+        &__txt{
+            text-align: center;
+            margin-bottom: 25px;
+            h1{
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+
+        .btn-gradient{
+            @include btn-gradient;
+                      // background: linear-gradient(to top, #9356DC,#f44fc5);
+        }
+    }
+
+
+    // SECTION FONCTIONNEMENT
+
+    .fonctionnement{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+
+
+        h1{
+            margin-top: 48px;
+            margin-bottom: 30px;
+        }
+        &__step{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 68px;
+            padding-left: 15px;
+            gap: 25px;
+
+            .step__number{
+                height: 70px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+                .number{
+                    position: absolute;
+                    left: 25px;
+                    
+                    background-color: #9356DC;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #fff;
+                    font-size: 14px;
+                    
+                }
+                .step_content{
+                    display: flex;
+                    flex-direction: row;
+                    i{
+                        margin-left: 10px;
+                        margin-right: 25px;
+                        color: grey;
+                        font-size: 21px;
+                    }
+                    .fa-store{
+                        color: #9356DC;
+                    }
+                    p{
+                        font-weight: bold;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+    }
+    // MEDIA QUERIES MIN 768PX SECTION FONCTIONNEMENT
+
+    @media screen and (min-width: 1024px) {
+            
+        
+        .fonctionnement{
+
+            display: flex;
+            flex-direction: column;
+            padding: 0 180px;
+            h1{
+                margin-top: 48px;
+            }
+        } 
+        .fonctionnement__step{
+            
+                display: flex;
+                flex-direction: row;
+                
+                align-items: center;
+                padding-left: 0px;
+                margin-bottom: 68px;
+                gap: 40px;
+                
+            }
+            .step__number{
+                min-width: 300px;
+                height: 70px;
+             }
+             #stepone{
+                position: relative;
+                left: -30px;
+             }
+
+             #steptwo{
+                position: relative;
+                left: -36px;
+             }
+
+             #stepthree{
+                position: relative;
+                left: -33px;
+             }
+    }
+
+     // SECTION RESTAURANTS
+
+     .restaurants{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 65px;
+        .restaurants__title{
+            margin-top: 45px ;
+            margin-bottom: 25px;
+        }
+     }
+    // FIN MAIN
+}

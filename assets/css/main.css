@@ -85,33 +85,55 @@ a {
   background-color: #FFFFFF;
 }
 
-.restaurants__card {
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants__container .restaurants__card {
   width: 100%;
   height: 250px;
   background-color: white;
   border-radius: 15px;
 }
-.restaurants__card a {
+.restaurants__container .restaurants__card a {
   color: black;
 }
-.restaurants__card a h3 {
+.restaurants__container .restaurants__card a h3 {
   font-size: 18px;
   font-weight: bold;
 }
-.restaurants__card a img {
+.restaurants__container .restaurants__card a img {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  height: 70%;
+  height: 65%;
   width: 100%;
 }
-.restaurants__card a .card-content {
+.restaurants__container .restaurants__card a .card-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 30%;
+  height: 35%;
   padding-left: 15px;
   padding-right: 25px;
+}
+.restaurants__container .restaurants__card a .card-content .card-title {
+  margin-bottom: 5px;
+}
+.restaurants__container .restaurants__card a .card-content .fa-heart {
+  font-size: 25px;
+}
+
+.btn-gradient {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 18px 20px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 header {
@@ -241,9 +263,11 @@ main .fonctionnement__step {
   gap: 25px;
 }
 main .fonctionnement__step .step__number {
+  height: 70px;
   display: flex;
   flex-direction: row;
-  padding: 28px;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -276,13 +300,48 @@ main .fonctionnement__step .step__number .step_content p {
   font-weight: bold;
   line-height: 27px;
 }
+@media screen and (min-width: 1024px) {
+  main .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 0 180px;
+  }
+  main .fonctionnement h1 {
+    margin-top: 48px;
+  }
+  main .fonctionnement__step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px;
+    margin-bottom: 68px;
+    gap: 40px;
+  }
+  main .step__number {
+    min-width: 300px;
+    height: 70px;
+  }
+  main #stepone {
+    position: relative;
+    left: -30px;
+  }
+  main #steptwo {
+    position: relative;
+    left: -36px;
+  }
+  main #stepthree {
+    position: relative;
+    left: -33px;
+  }
+}
 main .restaurants {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  margin-bottom: 65px;
 }
 main .restaurants .restaurants__title {
-  margin-top: 54px;
+  margin-top: 45px;
   margin-bottom: 25px;
 }
 
