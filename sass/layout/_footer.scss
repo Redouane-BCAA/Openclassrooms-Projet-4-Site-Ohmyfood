@@ -1,0 +1,42 @@
+// FOOTER MOBILE FIRST
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    
+
+    h2{
+        font-family: "shrikhand" ;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+      
+        li{
+            margin-bottom: 8px;
+            
+            .link__bold{
+                font-weight: bold;
+            }
+            .list__link{
+                color: white;
+                font-size: 16px;
+                
+                
+                .fa-utensils{
+                    font-size: 13px;
+                    margin-right: 7px;
+                }
+                .fa-handshake-angle{
+                    font-size: 12px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}

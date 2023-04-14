@@ -1,20 +1,21 @@
 // RESTAURANTS CARD
 .restaurants__card{
-    padding: 15px;
+    
     width: 100%;
     height: 250px;
     background-color: white;
     border-radius: 15px;
         a{
-            text-decoration: none;
+            // text-decoration: none;
             color: black;
             h3{
                 font-size: 18px;
                 font-weight: bold;
             }
             img{
+                border-radius: 15px 15px 0 0 ;
                 object-fit: cover;
-                height: 60%;
+                height: 70%;
                 width: 100%;
             }
             .card-content{
@@ -22,7 +23,9 @@
                 flex-direction: row ;
                 align-items: center;
                 justify-content: space-between;
-                
+                height: 30%;
+                padding-left: 15px;
+                padding-right: 25px;
             }
         }
     }

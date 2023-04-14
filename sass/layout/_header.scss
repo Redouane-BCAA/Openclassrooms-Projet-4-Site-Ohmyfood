@@ -1,9 +1,9 @@
 header{
     background-color: $white-bc;
     height: 63px;
-    @include flexbase;
+    @include flexmid;
     nav{
-        @include flexbase;
+        @include flexmid;
         
         .nav__arrow-left{
             display: none;
