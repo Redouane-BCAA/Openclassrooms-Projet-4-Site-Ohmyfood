@@ -452,8 +452,9 @@ main .restaurants .restaurants__container .restaurants__card .card-content {
 main .restaurants .restaurants__container .restaurants__card .card-content .card-title {
   margin-bottom: 5px;
 }
-main .restaurants .restaurants__container .restaurants__card .card-content .fa-heart {
+main .restaurants .restaurants__container .restaurants__card .card-content .far-heart {
   font-size: 25px;
+  background-image: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
 }
 
 /*# sourceMappingURL=main.css.map */
