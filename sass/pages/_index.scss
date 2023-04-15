@@ -42,6 +42,9 @@ main{
             margin-bottom: 25px;
             h1{
                 margin-bottom: 15px;
+                @media screen and (min-width: 1024px) {
+                    font-size: 41px;
+                }
             }
             p{
                 font-size: 17px;
@@ -56,112 +59,79 @@ main{
 
 
     // SECTION FONCTIONNEMENT
-
     .fonctionnement{
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-
-
-        h1{
-            margin-top: 48px;
-            margin-bottom: 30px;
+    
+        padding: 20px;
+        counter-reset: etapes;
+        @media screen and (min-width: 1024px) {
+            @include flexmid;
         }
-        &__step{
+        &_container{
+    
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+        }
+    
+         ol{
             display: flex;
             flex-direction: column;
-            margin-bottom: 68px;
-            padding-left: 15px;
-            gap: 25px;
-
-            .step__number{
-                height: 70px;
-                display: flex;
+            gap: 35px;
+            list-style-type: none;
+            padding-left: 4px;
+    
+            @media screen and (min-width: 1024px) {
                 flex-direction: row;
                 justify-content: center;
-                align-items: center;
+              
+            }
+    
+            li{
+                position: relative;
+                flex-grow: 1;
                 border-radius: 20px;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-
-                .number{
-                    position: absolute;
-                    left: 25px;
-                    
+    
+                padding: 28px;
+                font-weight: bold;
+    
+                &::before{ 
+                    @include flexmid;
+                    content:  counter(etapes);
+                    counter-increment: etapes;
+                    color: white;
+                    font-weight: normal;
                     background-color: #9356DC;
+                    padding: 5px;
+                    border-radius: 50%;
                     width: 25px;
                     height: 25px;
-                    border-radius: 100%;
-                    text-align: center;
-                    line-height: 25px;
-                    color: #fff;
-                    font-size: 14px;
-                    
+    
+                    position: absolute;
+                    top: 25px;
+                    left: -12px;
                 }
-                .step_content{
-                    display: flex;
-                    flex-direction: row;
-                    i{
-                        margin-left: 10px;
-                        margin-right: 25px;
-                        color: grey;
-                        font-size: 21px;
-                    }
-                    .fa-store{
-                        color: #9356DC;
-                    }
-                    p{
-                        font-weight: bold;
-                        line-height: 27px;
-                    }
+    
+                .fa-solid{
+                    font-size: 21px;
+                    margin-right: 23px;
+                    margin-left: 5px;
+                    color: grey;
                 }
+    
+                .fa-store{
+                    color: #9356DC;
+                    ;
+                }
+                
+            
             }
         }
-
     }
-    // MEDIA QUERIES MIN 768PX SECTION FONCTIONNEMENT
 
-    @media screen and (min-width: 1024px) {
-            
-        
-        .fonctionnement{
-
-            display: flex;
-            flex-direction: column;
-            padding: 0 180px;
-            h1{
-                margin-top: 48px;
-            }
-        } 
-        .fonctionnement__step{
-            
-                display: flex;
-                flex-direction: row;
-                
-                align-items: center;
-                padding-left: 0px;
-                margin-bottom: 68px;
-                gap: 40px;
-                
-            }
-            .step__number{
-                min-width: 300px;
-                height: 70px;
-             }
-             #stepone{
-                position: relative;
-                left: -30px;
-             }
-
-             #steptwo{
-                position: relative;
-                left: -36px;
-             }
-
-             #stepthree{
-                position: relative;
-                left: -33px;
-             }
-    }
 
      // SECTION RESTAURANTS
 

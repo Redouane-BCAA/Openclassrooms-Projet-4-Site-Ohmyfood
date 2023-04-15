@@ -1,6 +1,7 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe,
+html, body, p, ul,
+dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe,
 hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -233,6 +234,11 @@ main .reservation__txt {
 main .reservation__txt h1 {
   margin-bottom: 15px;
 }
+@media screen and (min-width: 1024px) {
+  main .reservation__txt h1 {
+    font-size: 41px;
+  }
+}
 main .reservation__txt p {
   font-size: 17px;
 }
@@ -247,92 +253,69 @@ main .reservation .btn-gradient {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 main .fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-}
-main .fonctionnement h1 {
-  margin-top: 48px;
-  margin-bottom: 30px;
-}
-main .fonctionnement__step {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 68px;
-  padding-left: 15px;
-  gap: 25px;
-}
-main .fonctionnement__step .step__number {
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-}
-main .fonctionnement__step .step__number .number {
-  position: absolute;
-  left: 25px;
-  background-color: #9356DC;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  text-align: center;
-  line-height: 25px;
-  color: #fff;
-  font-size: 14px;
-}
-main .fonctionnement__step .step__number .step_content {
-  display: flex;
-  flex-direction: row;
-}
-main .fonctionnement__step .step__number .step_content i {
-  margin-left: 10px;
-  margin-right: 25px;
-  color: grey;
-  font-size: 21px;
-}
-main .fonctionnement__step .step__number .step_content .fa-store {
-  color: #9356DC;
-}
-main .fonctionnement__step .step__number .step_content p {
-  font-weight: bold;
-  line-height: 27px;
+  padding: 20px;
+  counter-reset: etapes;
 }
 @media screen and (min-width: 1024px) {
   main .fonctionnement {
     display: flex;
-    flex-direction: column;
-    padding: 0 180px;
-  }
-  main .fonctionnement h1 {
-    margin-top: 48px;
-  }
-  main .fonctionnement__step {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding-left: 0px;
-    margin-bottom: 68px;
-    gap: 40px;
   }
-  main .step__number {
-    min-width: 300px;
-    height: 70px;
+}
+@media screen and (min-width: 1024px) {
+  main .fonctionnement_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  main #stepone {
-    position: relative;
-    left: -30px;
+}
+main .fonctionnement ol {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  list-style-type: none;
+  padding-left: 4px;
+}
+@media screen and (min-width: 1024px) {
+  main .fonctionnement ol {
+    flex-direction: row;
+    justify-content: center;
   }
-  main #steptwo {
-    position: relative;
-    left: -36px;
-  }
-  main #stepthree {
-    position: relative;
-    left: -33px;
-  }
+}
+main .fonctionnement ol li {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 28px;
+  font-weight: bold;
+}
+main .fonctionnement ol li::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: counter(etapes);
+  counter-increment: etapes;
+  color: white;
+  font-weight: normal;
+  background-color: #9356DC;
+  padding: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  left: -12px;
+}
+main .fonctionnement ol li .fa-solid {
+  font-size: 21px;
+  margin-right: 23px;
+  margin-left: 5px;
+  color: grey;
+}
+main .fonctionnement ol li .fa-store {
+  color: #9356DC;
 }
 main .restaurants {
   display: flex;
