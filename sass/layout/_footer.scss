@@ -2,8 +2,19 @@
 footer{
     display: flex;
     flex-direction: column;
-    padding: 22px 25px;
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
     
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        
+    }
 
     h2{
         font-family: "shrikhand" ;
@@ -16,6 +27,15 @@ footer{
     ul{
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .hand{
+                margin-right: 30px;
+            }
+        }
       
         li{
             margin-bottom: 8px;

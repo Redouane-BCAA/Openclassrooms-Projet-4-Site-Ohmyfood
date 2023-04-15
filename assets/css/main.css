@@ -86,31 +86,31 @@ a {
   background-color: #FFFFFF;
 }
 
-.restaurants__container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.restaurants__container .restaurants__card {
+.restaurants__card {
   width: 100%;
   height: 250px;
   background-color: white;
   border-radius: 15px;
 }
-.restaurants__container .restaurants__card a {
+@media screen and (min-width: 1024px) {
+  .restaurants__card {
+    width: 490px;
+  }
+}
+.restaurants__card a {
   color: black;
 }
-.restaurants__container .restaurants__card a h3 {
+.restaurants__card a h3 {
   font-size: 18px;
   font-weight: bold;
 }
-.restaurants__container .restaurants__card a img {
+.restaurants__card a img {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   height: 65%;
   width: 100%;
 }
-.restaurants__container .restaurants__card a .card-content {
+.restaurants__card a .card-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -119,10 +119,10 @@ a {
   padding-left: 15px;
   padding-right: 25px;
 }
-.restaurants__container .restaurants__card a .card-content .card-title {
+.restaurants__card a .card-content .card-title {
   margin-bottom: 5px;
 }
-.restaurants__container .restaurants__card a .card-content .fa-heart {
+.restaurants__card a .card-content .fa-heart {
   font-size: 25px;
 }
 
@@ -130,11 +130,17 @@ a {
   color: white;
   font-weight: bold;
   font-size: 16px;
-  padding: 18px 20px;
+  padding: 16px 25px;
   border-radius: 30px;
   border: none;
+  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: opacity 400ms ease-out;
+}
+.btn-gradient:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -159,7 +165,19 @@ header nav img {
 footer {
   display: flex;
   flex-direction: column;
-  padding: 22px 25px;
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+  }
 }
 footer h2 {
   font-family: "shrikhand";
@@ -171,6 +189,16 @@ footer h2 {
 footer ul {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer ul .hand {
+    margin-right: 30px;
+  }
 }
 footer ul li {
   margin-bottom: 8px;
@@ -189,6 +217,10 @@ footer ul li .list__link .fa-utensils {
 footer ul li .list__link .fa-handshake-angle {
   font-size: 12px;
   margin-right: 3px;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -246,14 +278,20 @@ main .reservation .btn-gradient {
   color: white;
   font-weight: bold;
   font-size: 16px;
-  padding: 18px 20px;
+  padding: 16px 25px;
   border-radius: 30px;
   border: none;
+  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: opacity 400ms ease-out;
+}
+main .reservation .btn-gradient:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 main .fonctionnement {
-  padding: 20px;
+  padding: 50px 20px;
   counter-reset: etapes;
 }
 @media screen and (min-width: 1024px) {
@@ -291,6 +329,11 @@ main .fonctionnement ol li {
   padding: 28px;
   font-weight: bold;
 }
+@media screen and (min-width: 1024px) {
+  main .fonctionnement ol li {
+    min-width: 322px;
+  }
+}
 main .fonctionnement ol li::before {
   display: flex;
   justify-content: center;
@@ -321,11 +364,87 @@ main .restaurants {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  main .restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  main .restaurants .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 main .restaurants .restaurants__title {
   margin-top: 45px;
   margin-bottom: 25px;
+}
+main .restaurants .restaurants__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media screen and (min-width: 1024px) {
+  main .restaurants .restaurants__container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}
+main .restaurants .restaurants__container .restaurants__card {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  main .restaurants .restaurants__container .restaurants__card {
+    width: 49%;
+  }
+}
+main .restaurants .restaurants__container .restaurants__card .card {
+  position: relative;
+  color: black;
+}
+main .restaurants .restaurants__container .restaurants__card .card .new {
+  position: absolute;
+  background-color: #99E2D0;
+  right: 17px;
+  top: -135px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #278870;
+}
+main .restaurants .restaurants__container .restaurants__card .card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+main .restaurants .restaurants__container .restaurants__card .card img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 65%;
+  width: 100%;
+}
+main .restaurants .restaurants__container .restaurants__card .card .card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 35%;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+main .restaurants .restaurants__container .restaurants__card .card .card-content .card-title {
+  margin-bottom: 5px;
+}
+main .restaurants .restaurants__container .restaurants__card .card .card-content .fa-heart {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
