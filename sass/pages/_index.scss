@@ -173,29 +173,30 @@ main{
         
             }
             .restaurants__card{
-                
+                position: relative;
                 width: 100%;
                 height: 250px;
                 background-color: white;
                 border-radius: 15px;
                 cursor: pointer;
                 @media screen and (min-width: 1024px) {
-                    width: 49%;
+                    width: 47%;
                 }
-                .card{
-                    position: relative;
+                .new{
                     
-                    .new{
+                    &::before{
+                        content: "Nouveau";
                         position: absolute;
                         background-color: $tertiaire;
-                        right: 17px;
-                        top: -135px;
-                        border-radius: 2px ;
-
                         font-size: 14px;
                         padding: 6px 10px;
-                        color: darken($color: $tertiaire, $amount: 40)
+                        color: darken($color: $tertiaire, $amount: 40);
+                        border-radius: 2px ;
+                        right: 17px;
+                        top: 13px;
                     }
+                }
+                    
                     color: black;
                     h3{
                         font-size: 18px;
@@ -227,6 +228,6 @@ main{
                 }
             }
         }
-     }
-    // FIN MAIN
+        // FIN MAIN
 }
+

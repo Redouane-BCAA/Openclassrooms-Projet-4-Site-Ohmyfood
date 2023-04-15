@@ -1,7 +1,7 @@
 // RESTAURANTS CARD
 
     .restaurants__card{
-        
+        position: relative;
         width: 100%;
         height: 250px;
         background-color: white;
@@ -9,8 +9,20 @@
         @media screen and (min-width: 1024px) {
             width: 490px;
         }
-        a{
-            // text-decoration: none;
+        .new{
+                    
+            &::before{
+                content: "Nouveau";
+                position: absolute;
+                background-color: $tertiaire;
+                font-size: 14px;
+                padding: 6px 10px;
+                color: darken($color: $tertiaire, $amount: 40);
+                border-radius: 2px ;
+                right: 17px;
+                top: 13px;
+            }
+        }
             color: black;
             h3{
                 font-size: 18px;
@@ -40,4 +52,4 @@
                 }
             }
         }
-    }
+    
