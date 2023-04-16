@@ -1,0 +1,39 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins";
+@import "../base/_reset.scss";
+@import "../base/_base.scss";
+@import "../composants/_cards.scss";
+@import "../composants/_button.scss";
+@import "../composants/_heart.scss";
+@import "../composants/green-new";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "_index.scss";
+
+// MAIN PAGE RESTAURANT 
+
+.restaurant-img{
+    width: 100%;
+    
+}
+//Partie title
+.restaurant-menu{
+    position: relative;
+    top: -60px;
+    padding-right: 13px ;
+    padding-left: 13px ;
+    border-radius: 50px;
+    
+    
+    .title-restaurant{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 5px 42px 5px;
+
+        .restaurant_title{
+            font-family: "Shrikhand";
+            font-size: 28px;
+        }
+    }
+}

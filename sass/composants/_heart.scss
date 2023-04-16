@@ -1,0 +1,17 @@
+// heart animation
+.fa-heart{
+    font-size: 25px;             
+        color: black;
+        cursor: pointer;
+      
+      &:hover {
+        animation: fill 0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background: $gradient-base;
+        background: -webkit-$gradient-base ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+}
