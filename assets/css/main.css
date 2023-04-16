@@ -154,20 +154,29 @@ a {
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 
-.fa-heart {
-  font-size: 25px;
+.like {
+  display: block;
   color: black;
   cursor: pointer;
 }
-.fa-heart:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
-  background: -webkit- linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+.like .fa-solid {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox][type=checkbox]:checked + .like {
+  background: linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
+  background: -webkit- linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+}
+input[type=checkbox][type=checkbox]:checked + .like .fa-solid {
+  display: block;
+}
+input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
+  display: none;
 }
 
 .new::before {
@@ -440,13 +449,15 @@ main .restaurants .restaurants__container .restaurants__card {
   height: 250px;
   background-color: white;
   border-radius: 15px;
-  cursor: pointer;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   main .restaurants .restaurants__container .restaurants__card {
     width: 47%;
   }
+}
+main .restaurants .restaurants__container .restaurants__card .new {
+  cursor: pointer;
 }
 main .restaurants .restaurants__container .restaurants__card .new::before {
   content: "Nouveau";
@@ -636,20 +647,29 @@ a {
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 
-.fa-heart {
-  font-size: 25px;
+.like {
+  display: block;
   color: black;
   cursor: pointer;
 }
-.fa-heart:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
-  background: -webkit- linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+.like .fa-solid {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox][type=checkbox]:checked + .like {
+  background: linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
+  background: -webkit- linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+}
+input[type=checkbox][type=checkbox]:checked + .like .fa-solid {
+  display: block;
+}
+input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
+  display: none;
 }
 
 .new::before {
@@ -922,13 +942,15 @@ main .restaurants .restaurants__container .restaurants__card {
   height: 250px;
   background-color: white;
   border-radius: 15px;
-  cursor: pointer;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   main .restaurants .restaurants__container .restaurants__card {
     width: 47%;
   }
+}
+main .restaurants .restaurants__container .restaurants__card .new {
+  cursor: pointer;
 }
 main .restaurants .restaurants__container .restaurants__card .new::before {
   content: "Nouveau";
