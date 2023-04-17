@@ -137,19 +137,37 @@ a {
   font-size: 25px;
 }
 
-.btn-gradient {
+.reservation__btn {
   color: white;
   font-weight: bold;
   font-size: 16px;
   padding: 16px 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   transition: opacity 400ms ease-out;
 }
-.btn-gradient:hover {
+.reservation__btn:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
+}
+
+.command-btn {
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: opacity 400ms ease-out;
+  font-weight: normal;
+  padding: 16px 43px;
+}
+.command-btn:hover {
   opacity: 0.8;
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
@@ -161,6 +179,10 @@ a {
 }
 .like .fa-solid {
   display: none;
+  font-size: 25px;
+}
+.like .fa-regular {
+  font-size: 25px;
 }
 
 input[type=checkbox] {
@@ -193,18 +215,16 @@ input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
 
 header {
   background-color: #FFFFFF;
-  height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header nav .nav__arrow-left {
-  display: none;
 }
 header nav img {
   width: 200px;
@@ -324,12 +344,9 @@ main .reservation__txt p {
 }
 main .reservation .btn-gradient {
   color: white;
-  font-weight: bold;
   font-size: 16px;
-  padding: 16px 25px;
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   transition: opacity 400ms ease-out;
@@ -630,19 +647,37 @@ a {
   font-size: 25px;
 }
 
-.btn-gradient {
+.reservation__btn {
   color: white;
   font-weight: bold;
   font-size: 16px;
   padding: 16px 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   transition: opacity 400ms ease-out;
 }
-.btn-gradient:hover {
+.reservation__btn:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
+}
+
+.command-btn {
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: opacity 400ms ease-out;
+  font-weight: normal;
+  padding: 16px 43px;
+}
+.command-btn:hover {
   opacity: 0.8;
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
@@ -654,6 +689,10 @@ a {
 }
 .like .fa-solid {
   display: none;
+  font-size: 25px;
+}
+.like .fa-regular {
+  font-size: 25px;
 }
 
 input[type=checkbox] {
@@ -686,18 +725,16 @@ input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
 
 header {
   background-color: #FFFFFF;
-  height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header nav .nav__arrow-left {
-  display: none;
 }
 header nav img {
   width: 200px;
@@ -817,12 +854,9 @@ main .reservation__txt p {
 }
 main .reservation .btn-gradient {
   color: white;
-  font-weight: bold;
   font-size: 16px;
-  padding: 16px 25px;
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   transition: opacity 400ms ease-out;
@@ -986,6 +1020,16 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   margin-bottom: 5px;
 }
 
+.arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.arrow-left i {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .restaurant-img {
   width: 100%;
 }
@@ -993,19 +1037,71 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
 .restaurant-menu {
   position: relative;
   top: -60px;
-  padding-right: 13px;
-  padding-left: 13px;
   border-radius: 50px;
 }
 .restaurant-menu .title-restaurant {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 32px 5px 42px 5px;
+  margin: 32px 18px 42px 18px;
 }
 .restaurant-menu .title-restaurant .restaurant_title {
   font-family: "Shrikhand";
   font-size: 28px;
+  font-weight: normal;
+}
+.restaurant-menu .restaurant-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+.restaurant-menu .restaurant-page .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.restaurant-menu .restaurant-page .menu__title h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.restaurant-menu .restaurant-page .menu__title hr {
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  border: none;
+}
+.restaurant-menu .restaurant-page .menu__button {
+  padding: 12px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurant-menu .restaurant-page .menu__button h3 {
+  font-size: 17px;
+}
+.restaurant-menu .restaurant-page .menu__button .button__description {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.restaurant-menu .restaurant-page .menu__button .button__description span {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.restaurant-menu .restaurant-page .container-command-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-menu .restaurant-page .container-command-btn .command {
+  font-weight: normal;
+  padding: 16px 43px;
 }
 
 /*# sourceMappingURL=main.css.map */

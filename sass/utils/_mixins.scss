@@ -5,12 +5,9 @@
 }
 @mixin btn-gradient{
         color: white;
-        font-weight: bold;
         font-size: 16px;
-        padding: 16px 25px ;
         border-radius: 30px;
         border: none;
-        cursor: pointer;
         background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); 
         transition: opacity 400ms ease-out;
@@ -19,3 +16,7 @@
         box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.30);
         }
     }
+
+@mixin shadowmenu {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15); 
+}
