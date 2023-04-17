@@ -3,6 +3,17 @@ header{
     @include flexmid;
     padding-top: 20px;
     padding-bottom: 15px;
+    
+    .arrow-left{
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        i{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+    }
     nav{
         @include flexmid;
         
