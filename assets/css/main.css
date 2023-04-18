@@ -332,9 +332,15 @@ main .reservation {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 57px;
   padding: 15px;
+}
+@media screen and (min-width: 1024px) {
+  main .reservation {
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
 main .reservation__txt {
   text-align: center;
@@ -373,14 +379,14 @@ main .fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 70px;
   }
 }
-@media screen and (min-width: 1024px) {
-  main .fonctionnement_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+main .fonctionnement_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 main .fonctionnement ol {
   display: flex;
@@ -388,6 +394,7 @@ main .fonctionnement ol {
   gap: 35px;
   list-style-type: none;
   padding-left: 4px;
+  margin: 0px;
 }
 @media screen and (min-width: 1024px) {
   main .fonctionnement ol {
@@ -405,6 +412,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1024px) {
   main .fonctionnement ol li {
+    max-width: 322px;
     min-width: 322px;
   }
 }
@@ -456,6 +464,11 @@ main .restaurants {
 main .restaurants .restaurants__title {
   margin-top: 45px;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 1024px) {
+  main .restaurants .restaurants__title {
+    margin-top: 30px;
+  }
 }
 main .restaurants .restaurants__container {
   display: flex;
@@ -851,9 +864,15 @@ main .reservation {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 57px;
   padding: 15px;
+}
+@media screen and (min-width: 1024px) {
+  main .reservation {
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
 main .reservation__txt {
   text-align: center;
@@ -892,14 +911,14 @@ main .fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 70px;
   }
 }
-@media screen and (min-width: 1024px) {
-  main .fonctionnement_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+main .fonctionnement_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 main .fonctionnement ol {
   display: flex;
@@ -907,6 +926,7 @@ main .fonctionnement ol {
   gap: 35px;
   list-style-type: none;
   padding-left: 4px;
+  margin: 0px;
 }
 @media screen and (min-width: 1024px) {
   main .fonctionnement ol {
@@ -924,6 +944,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1024px) {
   main .fonctionnement ol li {
+    max-width: 322px;
     min-width: 322px;
   }
 }
@@ -975,6 +996,11 @@ main .restaurants {
 main .restaurants .restaurants__title {
   margin-top: 45px;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 1024px) {
+  main .restaurants .restaurants__title {
+    margin-top: 30px;
+  }
 }
 main .restaurants .restaurants__container {
   display: flex;
@@ -1047,12 +1073,14 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   position: relative;
   top: -60px;
   border-radius: 50px 50px 0 0;
+  margin-bottom: -60px;
 }
 @media screen and (min-width: 1024px) {
   .restaurant-menu {
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 193px;
+    margin-left: 193px;
     top: -30px;
+    margin-bottom: -30px;
   }
 }
 .restaurant-menu .title-restaurant {
@@ -1060,6 +1088,14 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   justify-content: space-between;
   align-items: center;
   margin: 32px 18px 42px 18px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-menu .title-restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
 }
 .restaurant-menu .title-restaurant .restaurant_title {
   font-family: "Shrikhand";
@@ -1072,6 +1108,12 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   gap: 40px;
   margin-right: 13px;
   margin-left: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-menu .restaurant-page {
+    margin-right: 210px;
+    margin-left: 210px;
+  }
 }
 .restaurant-menu .restaurant-page .menu {
   display: flex;
