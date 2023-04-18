@@ -1111,14 +1111,22 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
 }
 @media screen and (min-width: 1024px) {
   .restaurant-menu .restaurant-page {
-    margin-right: 210px;
-    margin-left: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
   }
 }
 .restaurant-menu .restaurant-page .menu {
   display: flex;
   flex-direction: column;
   gap: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-menu .restaurant-page .menu {
+    width: 50%;
+  }
 }
 .restaurant-menu .restaurant-page .menu__title h2 {
   text-transform: uppercase;
@@ -1137,6 +1145,11 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-menu .restaurant-page .menu__button {
+    min-width: 330px;
+  }
 }
 .restaurant-menu .restaurant-page .menu__button h3 {
   font-size: 17px;
