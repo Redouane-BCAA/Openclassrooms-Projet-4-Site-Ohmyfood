@@ -1,6 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes heartbg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menu-animation {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes checkedmeal {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+@keyframes iconcheck {
+  from {
+    transform: rotate(0turn);
+    scale: 0%;
+  }
+  to {
+    transform: rotate(1turn);
+    scale: 100%;
+  }
+}
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, p, ul,
 dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe,
 hr, h1, h2, h3, h4, h5, h6 {
@@ -172,33 +209,28 @@ a {
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 
-.like {
-  display: block;
+.card-heart {
+  position: relative;
+}
+.card-heart .fa-heart {
+  font-size: 25px;
   color: black;
   cursor: pointer;
+  position: absolute;
+  top: -14px;
+  right: 0px;
 }
-.like .fa-solid {
-  display: none;
-  font-size: 25px;
-}
-.like .fa-regular {
-  font-size: 25px;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-input[type=checkbox][type=checkbox]:checked + .like {
-  background: linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
-  background: -webkit- linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
+.card-heart .bg {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  background: -webkit- linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-input[type=checkbox][type=checkbox]:checked + .like .fa-solid {
-  display: block;
-}
-input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
-  display: none;
+.card-heart .bg:hover {
+  animation: heartbg;
+  opacity: 1;
 }
 
 .new::before {
@@ -379,7 +411,7 @@ main .fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 70px;
+    padding-right: 60px;
   }
 }
 main .fonctionnement_container {
@@ -532,6 +564,43 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   margin-bottom: 5px;
 }
 
+@keyframes heartbg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menu-animation {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes checkedmeal {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+@keyframes iconcheck {
+  from {
+    transform: rotate(0turn);
+    scale: 0%;
+  }
+  to {
+    transform: rotate(1turn);
+    scale: 100%;
+  }
+}
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ul,
 dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe,
@@ -704,33 +773,28 @@ a {
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
 }
 
-.like {
-  display: block;
+.card-heart {
+  position: relative;
+}
+.card-heart .fa-heart {
+  font-size: 25px;
   color: black;
   cursor: pointer;
+  position: absolute;
+  top: -14px;
+  right: 0px;
 }
-.like .fa-solid {
-  display: none;
-  font-size: 25px;
-}
-.like .fa-regular {
-  font-size: 25px;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-input[type=checkbox][type=checkbox]:checked + .like {
-  background: linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
-  background: -webkit- linear-gradient(to bottom, #9356DC -14%, #FF79DA 128%);
+.card-heart .bg {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  background: -webkit- linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-input[type=checkbox][type=checkbox]:checked + .like .fa-solid {
-  display: block;
-}
-input[type=checkbox][type=checkbox]:checked + .like .fa-regular {
-  display: none;
+.card-heart .bg:hover {
+  animation: heartbg;
+  opacity: 1;
 }
 
 .new::before {
@@ -911,7 +975,7 @@ main .fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 70px;
+    padding-right: 60px;
   }
 }
 main .fonctionnement_container {
@@ -1094,7 +1158,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
   }
 }
 .restaurant-menu .title-restaurant .restaurant_title {
@@ -1122,6 +1186,9 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   display: flex;
   flex-direction: column;
   gap: 13px;
+  animation: menu-animation 2000ms ease-in-out;
+  animation-fill-mode: both;
+  transform-origin: -10%;
 }
 @media screen and (min-width: 1024px) {
   .restaurant-menu .restaurant-page .menu {
@@ -1209,23 +1276,14 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   display: block;
   animation: iconcheck 500ms ease-in-out;
 }
-@keyframes checkedmeal {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
+.restaurant-menu .restaurant-page .delay1 {
+  animation-delay: 0s;
 }
-@keyframes iconcheck {
-  from {
-    transform: rotate(0turn);
-    scale: 0%;
-  }
-  to {
-    transform: rotate(1turn);
-    scale: 100%;
-  }
+.restaurant-menu .restaurant-page .delay2 {
+  animation-delay: 1s;
+}
+.restaurant-menu .restaurant-page .delay3 {
+  animation-delay: 2s;
 }
 .restaurant-menu .restaurant-page .container-command-btn {
   display: flex;

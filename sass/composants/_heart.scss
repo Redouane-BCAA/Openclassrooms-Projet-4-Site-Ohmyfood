@@ -1,51 +1,64 @@
 // BUTTON LIKE VERSON HOVERheart animation //
-// .fa-heart{
-//     font-size: 25px;             
-//         color: black;
-//         cursor: pointer;
-      
-//       &:hover {
-//         animation: fill 0.3s ease-in-out;
-//         display: inline-block;
-//         opacity: 1;
-//         background: $gradient-base;
-//         background: -webkit-$gradient-base ;
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         font-weight: bold;
-//       }
-// }
 
-// BUTTON LIKE VERSION CLICK  //
+.card-heart{
+  position: relative;
 
-.like{
-  display: block;
- color: black;
- cursor: pointer;
- .fa-solid{
-  display: none;
-  font-size: 25px;
- }
- .fa-regular{
-  font-size: 25px;
- }
-}
+  .fa-heart{
+          font-size: 25px;             
+          color: black;
+          cursor: pointer;
+          position: absolute;
+          top: -14px;
+          right: 0px;
+        }
 
-input[type="checkbox"] {
-  display: none;
-  &[type="checkbox"]:checked + .like {
-    
-    background: $gradient-heart;
-    background: -webkit-$gradient-heart ;
+  .bg{
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    background: $gradient-base;
+    background: -webkit-$gradient-base ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    
-    .fa-solid{
-      display: block;
-      
-    }
-    .fa-regular{
-      display: none;
+
+    &:hover {
+      animation: heartbg ;
+      opacity: 1;
+     
     }
   }
 }
+
+
+// BUTTON LIKE VERSION CLICK  //
+
+// .like{
+//   display: block;
+//  color: black;
+//  cursor: pointer;
+//  .fa-solid{
+//   display: none;
+//   font-size: 25px;
+//  }
+//  .fa-regular{
+//   font-size: 25px;
+//  }
+// }
+
+// input[type="checkbox"] {
+//   display: none;
+//   &[type="checkbox"]:checked + .like {
+    
+//     background: $gradient-heart;
+//     background: -webkit-$gradient-heart ;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent; 
+    
+//     .fa-solid{
+//       display: block;
+      
+//     }
+//     .fa-regular{
+//       display: none;
+//     }
+//   }
+// }
