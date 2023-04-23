@@ -572,7 +572,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   position: fixed;
   z-index: 1;
   opacity: 0.8;
-  animation: loader 3s 3s ease-in-out;
+  animation: loader 1s 2s ease-in-out;
   animation-fill-mode: forwards;
   transform-origin: top;
 }
@@ -1175,7 +1175,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   position: fixed;
   z-index: 1;
   opacity: 0.8;
-  animation: loader 3s 3s ease-in-out;
+  animation: loader 1s 2s ease-in-out;
   animation-fill-mode: forwards;
   transform-origin: top;
 }
