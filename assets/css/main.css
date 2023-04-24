@@ -29,12 +29,10 @@
 }
 @keyframes iconcheck {
   from {
-    transform: rotate(0turn);
-    scale: 0%;
+    transform: rotate(0turn) scale(0);
   }
   to {
-    transform: rotate(1turn);
-    scale: 100%;
+    transform: rotate(1turn) scale(1);
   }
 }
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -203,6 +201,7 @@ a {
   transition: opacity 400ms ease-out;
   font-weight: normal;
   padding: 16px 43px;
+  cursor: pointer;
 }
 .command-btn:hover {
   opacity: 0.8;
@@ -632,12 +631,10 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
 }
 @keyframes iconcheck {
   from {
-    transform: rotate(0turn);
-    scale: 0%;
+    transform: rotate(0turn) scale(0);
   }
   to {
-    transform: rotate(1turn);
-    scale: 100%;
+    transform: rotate(1turn) scale(1);
   }
 }
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -806,6 +803,7 @@ a {
   transition: opacity 400ms ease-out;
   font-weight: normal;
   padding: 16px 43px;
+  cursor: pointer;
 }
 .command-btn:hover {
   opacity: 0.8;

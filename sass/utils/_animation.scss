@@ -43,11 +43,10 @@
 
     @keyframes iconcheck {
         from{
-            transform: rotate(0turn);
-            scale: (0%);
+            transform: rotate(0turn) scale(0);
         }
         to{
-            transform: rotate(1turn) ;
-             scale :(100%);
+            transform: rotate(1turn) scale(1);
+             
         }
     }

@@ -73,6 +73,7 @@ main{
         @media screen and (min-width: 1024px) {
             @include flexmid;
             padding-right: 60px;
+           
             
         }
         &_container{
