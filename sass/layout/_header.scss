@@ -16,10 +16,6 @@ header{
     }
     nav{
         @include flexmid;
-        
-        // .nav__arrow-left{
-        //     display: none;
-        // }
         img{
             width: 200px;
         }

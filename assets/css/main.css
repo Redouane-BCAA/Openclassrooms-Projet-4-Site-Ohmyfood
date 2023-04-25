@@ -280,7 +280,6 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   footer {
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
@@ -300,7 +299,6 @@ footer ul {
 }
 @media screen and (min-width: 1024px) {
   footer ul {
-    display: flex;
     flex-direction: row;
     gap: 10px;
   }
@@ -426,11 +424,6 @@ main .fonctionnement ol {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1100px) {
-  main .fonctionnement ol {
-    gap: 20px;
-  }
-}
 main .fonctionnement ol li {
   position: relative;
   flex-grow: 1;
@@ -441,7 +434,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1100px) {
   main .fonctionnement ol li {
-    max-width: 330px;
+    max-width: 333px;
     min-width: 333px;
   }
 }
@@ -884,7 +877,6 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   footer {
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
@@ -904,7 +896,6 @@ footer ul {
 }
 @media screen and (min-width: 1024px) {
   footer ul {
-    display: flex;
     flex-direction: row;
     gap: 10px;
   }
@@ -1030,11 +1021,6 @@ main .fonctionnement ol {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1100px) {
-  main .fonctionnement ol {
-    gap: 20px;
-  }
-}
 main .fonctionnement ol li {
   position: relative;
   flex-grow: 1;
@@ -1045,7 +1031,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1100px) {
   main .fonctionnement ol li {
-    max-width: 330px;
+    max-width: 333px;
     min-width: 333px;
   }
 }
@@ -1235,9 +1221,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
 }
 @media screen and (min-width: 1024px) {
   .restaurant-menu .title-restaurant {
-    display: flex;
     justify-content: center;
-    align-items: center;
     gap: 50px;
   }
 }
@@ -1255,7 +1239,6 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
 }
 @media screen and (min-width: 1024px) {
   .restaurant-menu .restaurant-page {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
