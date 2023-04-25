@@ -414,7 +414,12 @@ main .fonctionnement {
   }
 }
 main .fonctionnement_container {
-  margin: 50px 20px;
+  margin: 50px 20px 70px 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .fonctionnement_container {
+    margin-bottom: 50px;
+  }
 }
 main .fonctionnement ol {
   display: flex;
@@ -1015,7 +1020,12 @@ main .fonctionnement {
   }
 }
 main .fonctionnement_container {
-  margin: 50px 20px;
+  margin: 50px 20px 70px 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .fonctionnement_container {
+    margin-bottom: 50px;
+  }
 }
 main .fonctionnement ol {
   display: flex;
