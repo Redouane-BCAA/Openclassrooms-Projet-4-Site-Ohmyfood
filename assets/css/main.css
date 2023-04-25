@@ -408,6 +408,11 @@ main .fonctionnement {
     place-items: center;
   }
 }
+@media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1100px) {
+  main .fonctionnement {
+    place-items: initial;
+  }
+}
 main .fonctionnement_container {
   margin: 50px 20px;
 }
@@ -440,8 +445,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1024px) and (max-width: 1100px) {
   main .fonctionnement ol li {
-    max-width: 322px;
-    min-width: 322px;
+    width: 39%;
   }
 }
 main .fonctionnement ol li::before {
@@ -1005,6 +1009,11 @@ main .fonctionnement {
     place-items: center;
   }
 }
+@media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1100px) {
+  main .fonctionnement {
+    place-items: initial;
+  }
+}
 main .fonctionnement_container {
   margin: 50px 20px;
 }
@@ -1037,8 +1046,7 @@ main .fonctionnement ol li {
 }
 @media screen and (min-width: 1024px) and (max-width: 1100px) {
   main .fonctionnement ol li {
-    max-width: 322px;
-    min-width: 322px;
+    width: 39%;
   }
 }
 main .fonctionnement ol li::before {
