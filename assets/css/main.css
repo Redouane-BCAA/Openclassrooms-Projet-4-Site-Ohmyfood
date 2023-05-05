@@ -337,6 +337,7 @@ main .localisation {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0em 5px 4px rgba(0, 0, 0, 0.15);
 }
 main .localisation .localisation__form {
   padding-top: 15px;
@@ -348,6 +349,7 @@ main .localisation .localisation__form input {
   padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
+  width: 155px;
 }
 main .localisation .localisation__form input:focus {
   outline: none;
@@ -563,6 +565,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content {
   height: 35%;
   padding-left: 15px;
   padding-right: 25px;
+  padding-bottom: 8px;
 }
 main .restaurants .restaurants__container .restaurants__card .card-content .card-title {
   margin-bottom: 5px;
@@ -944,6 +947,7 @@ main .localisation {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0em 5px 4px rgba(0, 0, 0, 0.15);
 }
 main .localisation .localisation__form {
   padding-top: 15px;
@@ -955,6 +959,7 @@ main .localisation .localisation__form input {
   padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
+  width: 155px;
 }
 main .localisation .localisation__form input:focus {
   outline: none;
@@ -1170,6 +1175,7 @@ main .restaurants .restaurants__container .restaurants__card .card-content {
   height: 35%;
   padding-left: 15px;
   padding-right: 25px;
+  padding-bottom: 8px;
 }
 main .restaurants .restaurants__container .restaurants__card .card-content .card-title {
   margin-bottom: 5px;
@@ -1345,9 +1351,6 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   justify-content: center;
   display: none;
 }
-.restaurant-menu .restaurant-page .menu .menu__button .checked i {
-  display: none;
-}
 .restaurant-menu .restaurant-page .menu .menu__button:hover .checked {
   display: flex;
   align-items: center;
@@ -1356,7 +1359,6 @@ main .restaurants .restaurants__container .restaurants__card .card-content .card
   transform-origin: 100%;
 }
 .restaurant-menu .restaurant-page .menu .menu__button:hover .checked i {
-  display: block;
   animation: iconcheck 500ms ease-in-out;
 }
 .restaurant-menu .restaurant-page .delay1 {

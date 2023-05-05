@@ -1,0 +1,35 @@
+Bonjour Paul , je reviens vers toi par rapport au site mobile first de l'entreprise ohmyfood. 
+Donc pour rappel c'est une entreprise qui souhaite se développer à paris après s'être déjà developper à new-york. son concept est simple 
+elle permet à ses utilisateur de composer leurs propres menu et de gagner ainsi du temps une fois arrivé au restaurant.
+
+elle se tourne également sur un marché de restaurant luxueux.
+
+STEP 1 : faire un tour de la maquette et du prototype du site avec les demandes à savoir :
+
+- en hover les btn gradient qui s'éclaircisse et l'ombre portée qui s'agrandit 
+- animation du coeur avec remplissage en progressif 
+
+STEP 2 : faire un tour sur le site intégrer par moi même
+
+-Montrer le loader /les anims coeur / les apparition du menus / le check qui apparait sur les plats . 
+
+-Montrer la version pc 
+
+-Parler du badge nouveau intégrer avec la pseudo classe ::before sur class new
+
+-pour mobile first j'ai tout intégrer avec largeur 100%
+
+-Montrer code html validé et css validé. 
+
+STEP 3  Explication des animations :
+
+coeur : mise en place de 2 coeurs qui se superposent en position absolute 
+celui qui a le gradient est en opacity 0 grace à l'animation en hover il passe en opaciti 1 et passe par dessus le coeur vide
+
+check menu : display none et passe en display flex en hover avec un transform origin  de 100% pour apparition de la droite vers la gauche 
+animation : de 0px à 60px pour faire apparaitre le check 
+animation sur l'icon sclae et turn
+
+- loader : écran avec bc du footer et opacity de 0.8 qui disparait vers le top en scale -100
+texte loader avec police shrikhand rappel logo ohmyfood avec animation qui créer un effet de clignotememnt avec color en light grey et black
+

@@ -151,7 +151,7 @@
             
                    .checked{
                     background-color: $tertiaire;
-                    // padding: 20px;
+                    
                     font-size: 18px;
                     color: white;
                     height: 100%;
@@ -160,31 +160,23 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    display: none;
-                    
-                    i{
-                        display: none;
-                    }
+                    display: none;                   
                    } 
                 
                    &:hover {
                    
-                   .checked {
-                      
-                       display: flex;
-                       align-items: center;
-                       justify-content: center;
-                       animation: checkedmeal 500ms  ;
-                       transform-origin: 100%;
-                   
-                       i{
-                           display: block;
-                           animation: iconcheck 500ms ease-in-out;        
-                       }
-                   
-
-                   
-                       }   
+                    .checked {
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation: checkedmeal 500ms ;
+                        transform-origin: 100%;
+                    
+                            i{                        
+                                animation: iconcheck 500ms ease-in-out;        
+                            }
+                    }   
                    
                    }
             }
